@@ -23,7 +23,7 @@ function handleSymbol(symbol) {
       if(previousOperator === null) {
         return
       }
-      flushOperation(parceInt(buffer));
+      flushOperation(parseInt(buffer));
       previousOperator = null;
       buffer = runningTotal;
       runningTotal = 0;
